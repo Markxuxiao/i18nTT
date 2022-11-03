@@ -1,8 +1,7 @@
 {
-  "name": "i18n-help",
+  "name": "@mandk/i18n-help",
   "version": "0.0.1",
   "description": "",
-  "main": "index.js",
   "bin": {
     "mandk": "bin/index.js"
   },
@@ -11,10 +10,15 @@
   },
   "author": "xuxiao",
   "license": "MIT",
+  "keywords": ["node", "javascript", "i18n", "js", "i18nTT"],
   "dependencies": {
     "commander": "^9.4.1"
   },
   "devDependencies": {
     "mocha": "^10.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Markxuxiao/i18nTT"
   }
 }
