@@ -4,6 +4,8 @@
 # 安装
 
 # 使用
+ ## translate命令
+ mandk translate src/app/views/xxx.vue
 
 # 本地开发优化此工具
 * 下载项目包

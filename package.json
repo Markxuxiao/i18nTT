@@ -10,7 +10,13 @@
   },
   "author": "xuxiao",
   "license": "MIT",
-  "keywords": ["node", "javascript", "i18n", "js", "i18nTT"],
+  "keywords": [
+    "node",
+    "javascript",
+    "i18n",
+    "js",
+    "i18nTT"
+  ],
   "dependencies": {
     "commander": "^9.4.1"
   },
