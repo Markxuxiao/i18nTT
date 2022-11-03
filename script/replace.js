@@ -1,6 +1,5 @@
 
 const fs = require('fs')
-const path = require('path')
 const processSource = require(`./processSource`)
 const generateI18nData = require(`./generateI18nData`)
 // const { setDefaultData, isInclude, isExclude } = require(`${process.cwd()}/src/utils`)
@@ -39,9 +38,9 @@ function readFile(fileName, curID, resolve) {
     done[curID] = false
     fs.readFile(fileName, 'utf-8', (err, source) => {
         if (err) throw err
-        console.log(fileName)
+        // console.log(fileName)
         processSource(source).then(data => {
-          console.log(data)
+          // console.log(data)
           // resolve()
             fs.writeFile(fileName, data.str, 'utf-8', err => {
                 if (err) throw err
@@ -49,9 +48,11 @@ function readFile(fileName, curID, resolve) {
                 // // 处理完最后一个文件后，生成 i18n 数据
                 // if (!done.includes(false)) {
                     generateI18nData(data.list).then((json) => {
-                        fs.writeFile(fileName+'.json', json, 'utf-8', err => {
+                        console.log('运行完成！')
+                        console.log(json)
+                        // fs.writeFile(fileName+'.json', json, 'utf-8', err => {
 
-                        })
+                        // })
                         resolve()
                     })
                 // }
