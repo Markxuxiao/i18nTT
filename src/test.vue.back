@@ -1,0 +1,13 @@
+<template>
+  <div>
+      {{$t('有人')}}<div value="{{$t('二')}}" :val="abc + '$t('三') afb'">{{$t('一')}}</div>{{$t('在国')}}
+  </div>
+</template>
+
+<script>
+export default {
+  created() {
+      const test = '$t('测试')'
+  }
+}
+</script>

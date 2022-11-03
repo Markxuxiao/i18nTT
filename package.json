@@ -1,0 +1,20 @@
+{
+  "name": "i18n-help",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "mandk": "bin/index.js"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "xuxiao",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^9.4.1"
+  },
+  "devDependencies": {
+    "mocha": "^10.1.0"
+  }
+}
