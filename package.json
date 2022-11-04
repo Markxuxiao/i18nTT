@@ -1,6 +1,6 @@
 {
   "name": "@mandk/i18n-help",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "",
   "bin": {
     "mandk": "bin/index.js"
