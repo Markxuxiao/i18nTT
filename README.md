@@ -7,7 +7,7 @@
 template
 - [x] 中文 -> {{$t('中文')}}
 - [x] lable = "中文" -> :lable = "$t('中文')"
-- [x] lable = '中文' -> :lable = "$t('中文')"
+- [ ] lable = '中文' -> :lable = "$t('中文')"
 - [ ] 跳过单行注释
 - [ ] 跳过多行注释
 
@@ -22,7 +22,9 @@ script
 npm i @mandk/i18n-help -g
 # 使用
  ## translate命令
+ 项目下面执行
  mandk translate src/app/views/xxx.vue
+文件路径可以从vscode中复制相对路径
 终端会打印替换过的词json，方便复制到语言文件中使用
 
 # 本地开发优化此工具

@@ -66,7 +66,7 @@ module.exports = function replace(i18nConfig) {
       exclude = i18nConfig.exclude || []
       include = i18nConfig.include
       entry = config.entry
-      if (/(\.vue)|(\.js)$/.test(entry) || (config.extra && config.extra.test(entry))) {
+      if (/(\.vue)|(\.js)|(\.ts)$/.test(entry) || (config.extra && config.extra.test(entry))) {
           readFile(entry, ++id, resolve)
       } else {
           resolve()
