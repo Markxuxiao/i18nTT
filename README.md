@@ -7,14 +7,14 @@
 template
 - [x] 中文 -> {{$t('中文')}}
 - [x] lable = "中文" -> :lable = "$t('中文')"
-- [ ] lable = '中文' -> :lable = "$t('中文')"
+- [x] lable = '中文' -> :lable = "$t('中文')"
 - [ ] 跳过单行注释
 - [ ] 跳过多行注释
 
 
 script
 - [x] '中文' -> this.$t('中文')
-- [ ] "中文" -> this.$t('中文')
+- [x] "中文" -> this.$t('中文')
 - [ ] 跳过单行注释
 - [ ] 跳过多行注释
 
@@ -33,3 +33,6 @@ npm i @mandk/i18n-help -g
 
 # 测试工具文档
 [mochajs](https://mochajs.org/#getting-started)
+
+# 发布
+npm publish --access public
